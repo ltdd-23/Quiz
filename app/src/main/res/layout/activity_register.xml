@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context=".RegisterActivity">
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="310dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="30dp"
+        android:background="#FEFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="130dp"
+        android:src="@drawable/img_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Tên tài khoản"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColor="#070505"
+        android:textColorHint="#0E0404"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Nhập mật khẩu"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#0B0808"
+        android:textColorHint="#120606"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="247dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#243464"
+        android:text="Đăng ký"
+        app:layout_constraintBottom_toTopOf="@+id/backlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Nhấp vào ảnh để chọn avatar"
+        android:textColor="#080909"
+        android:textColorLink="#B57920"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Tạo Tài Khoản"
+        android:textColor="#2B419E"
+        android:textColorLink="#8C0E17"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/backlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Bạn đã có tài khoản? Đăng nhập"
+        android:textColor="#070303"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="259dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="text"
+        android:textColor="#0C0D12"
+        android:textColorHint="#0E0101"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="395dp"
+        android:layout_height="626dp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginEnd="-40dp"
+        android:layout_marginBottom="-80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:srcCompat="@drawable/phg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

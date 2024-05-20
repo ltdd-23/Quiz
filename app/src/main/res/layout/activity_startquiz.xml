@@ -1,0 +1,84 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start">
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="411dp"
+        android:layout_height="676dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="407dp"
+        android:layout_height="63dp"
+        android:background="#EAF0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_logo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="165dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="VanAn"
+        android:textColor="#0B0909"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/image_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="25dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="3dp"
+        android:text="12"
+        android:textColor="#0B0909"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

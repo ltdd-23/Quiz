@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF9FD"
+    android:backgroundTint="#FBF8FC">
+
+    <TextView
+        android:id="@+id/editTextText"
+        android:layout_width="252dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:hint="Nhập câu hỏi"
+        android:inputType="text"
+        android:text="Quên mật khẩu?"
+        android:textColor="#143373"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textView13"
+        android:layout_width="340dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="29dp"
+        android:gravity="left"
+        android:hint="Số điện thoại"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColorHint="#C80E0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#143373"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true"
+        android:text="Tiếp tục"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="105dp"
+        android:backgroundTint="#143373"
+        android:fontFamily="sans-serif-medium"
+        android:text="Trở về"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="340dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Tên tài khoản"
+        android:inputType="text"
+        android:textColor="#130D0D"
+        android:textColorHint="#A6000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="335dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:text="Nhập tên tài khoản, số điện thoại liên kết với tài khoản của bạn để đổi mật khẩu."
+        android:textColorLink="#050505"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

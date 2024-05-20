@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Khai báo Service -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/iconapp"
+        android:roundIcon="@drawable/icons8_quizizz_500"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+
+        <!-- Định nghĩa các Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".StartActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".QuestionActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".ScoreActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Định nghĩa Service -->
+        <service android:name=".MusicService" />
+
+    </application>
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C00BCD4"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonSound"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:text="Âm Thanh" />
+
+    <Button
+        android:id="@+id/buttonTheme"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSound"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:text="Chọn giao diện" />
+
+    <Button
+        android:id="@+id/buttonAvatar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonTheme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:fallbackLineSpacing="false"
+        android:hapticFeedbackEnabled="false"
+        android:text="Chọn ảnh đại diện" />
+
+    <Button
+        android:id="@+id/buttonSnow"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:text="quay lại màn hình chính" />
+
+    <Button
+        android:id="@+id/buttonDeleteAccount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSnow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:text="Xóa tài khoản" />
+
+</RelativeLayout>
