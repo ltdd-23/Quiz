@@ -39,6 +39,7 @@
         android:hint="Số điện thoại"
         android:imeOptions="actionNext"
         android:singleLine="true"
+        android:textColor="#0C0000"
         android:textColorHint="#C80E0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
